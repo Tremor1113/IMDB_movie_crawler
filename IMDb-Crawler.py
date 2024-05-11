@@ -14,8 +14,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 import time
-# ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0'
-# headers = {'User-Agent': ua}
+
 
 def get_info(url,headers):
     url = f'https://www.imdb.com/title/tt{url}'
@@ -222,7 +221,7 @@ def main(headers):
         
 
 if __name__ == '__main__':
-    ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0'
+    ua = ''
     headers = {'User-Agent': ua}
     # with open('IMDB_Data_train.txt', 'w', encoding='utf-8') as f:
     #     # 写入列头
